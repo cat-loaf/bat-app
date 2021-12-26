@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+        <link rel="icon" type="image/png" href="./images/icon.png">
+
+        <script src="main.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/aeec6844ca.js" crossorigin="anonymous"></script>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>BAT-App</title>
+    </head>
+
+    <body onload="loadUp()">
+        <main class="animate__animated animate__slideInDown" >
+            <h1 class="centered"><i class="fas fa-feather fa-flip-horizontal"></i> Make a Desktop Applet with a Web Address <i class="fas fa-feather"></i></h1>
+            <h3 class="centered">(Windows only)</h3>
+
+            <hr><br>
+            
+            <div class="url-wrapper">
+                <sub><i class="fas fa-arrow-circle-right"></i> URL (Please include the <em>"https://"</em> or <em>"http://"</em> in your link)</sub>
+                <div class="url-input-wrapper">
+                    <inputpre><i class="fas fa-link"></i>   |   </inputpre><input type="text" id="url-input" placeholder="Type here...">
+                </div>
+            </div>
+
+            <br>
+            <div class="b-i-wrapper">
+                <div class="browser-wrapper">
+                    <sub><i class="fas fa-arrow-circle-right"></i> Select your Web Browser</sub> <br>
+                    <div class="browser-input-wrapper">
+                        <div class="browser-select-wrapper">
+                            <div class="option" id="chrome">
+                                <img class="browser-option" alt="Google Chrome Web Browser" src="./images/browser-icons/Chrome.png">
+                                <br>
+                                <sub>Chrome</sub>
+                            </div>
+
+                            <div class="option" id="edge">
+                                <img class="browser-option" alt="Microsoft Edge Web Browser" src="./images/browser-icons/Edge.png">
+                                <br>
+                                <sub>Edge</sub>
+                            </div>
+
+                            <div class="option" id="firefox">
+                                <img class="browser-option" alt="Firefox Web Browser" src="./images/browser-icons/Firefox.png">
+                                <br>
+                                <sub>Firefox</sub>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+
+                <div class="icon-wrapper">
+                    <sub><i class="fas fa-arrow-circle-right"></i> Select the Icon</sub> <br>
+                    <div class="icon-input-wrapper" style="text-align: center;">
+                        <sub style="font-size:1em;"><i class="fas fa-file-image"></i> Selected Applet Icon</sub> 
+                        
+                        <br>
+                        
+                        <img src="https://via.placeholder.com/128" alt="Image" id="imagetochange" style="padding:10px;"> <!--  Format: https://www.google.com/s2/favicons?sz=128&domain_url=**LINK**  -->
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <hr>
+            <br>
+            <div class="download-wrapper">
+                <div class="download-btn">
+                    Download your Applet!<br>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
